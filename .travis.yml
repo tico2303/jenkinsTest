@@ -9,4 +9,4 @@ install:
 script:
         - nosetests -v --with-coverage
 after_sucess:
-        - bash < (curl -s https://codecov.io/bash)
+        - codecov
