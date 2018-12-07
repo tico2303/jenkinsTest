@@ -1,6 +1,6 @@
 language: python
 
-sudo: false
+sudo: true
 
 python:
         - "3.6"
@@ -9,7 +9,7 @@ install:
 script:
         - coverage run test_add.py
 before_install:
-        - pip install codecov
+        - pip install --user codecov
 after_sucess:
         - codecov -t $CODECOV_TOKEN
         - echo $CODECOV_TOKEN
