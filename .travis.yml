@@ -9,4 +9,4 @@ install:
 script:
         - nosetests -v --with-coverage
 after_sucess:
-        - codecov
+        - codecov -t $CODECOV_TOKEN
