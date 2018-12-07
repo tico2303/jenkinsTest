@@ -5,8 +5,8 @@ python:
 install:
         - pip install -r requirements.txt
 script:
-        - nosetests
+        - nosetests --with-coverage
 before_install:
-        - pip install codecov
+        - pip install --user codecov
 after_sucess:
-        - codecov 
+        - codecov --file coverage/lcov.info --diable search
