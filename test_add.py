@@ -14,4 +14,4 @@ class TestAdd(unittest.TestCase):
         self.assertEqual(calc.mult(10,10), 100)
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main(exit=False)
