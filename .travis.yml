@@ -1,11 +1,13 @@
 language: python
-sudo: required 
+
+sudo: false
+
 python:
         - "3.6"
 install:
         - pip install -r requirements.txt
 script:
-        - nosetests --with-coverage
+        - coverage run test_add.py
 before_install:
         - pip install codecov
 after_sucess:
