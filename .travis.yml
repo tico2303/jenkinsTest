@@ -7,4 +7,6 @@ python:
 install:
         - pip install -r requirements.txt
 script:
-        - python test_add.py
+        - nosetests -v --with-coverage
+after_sucess:
+        - bash < (curl -s https://codecov.io/bash)
