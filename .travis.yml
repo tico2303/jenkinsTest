@@ -7,6 +7,6 @@ install:
 script:
         - nosetests --with-coverage
 before_install:
-        - pip install --user codecov
+        - pip install codecov
 after_sucess:
         - codecov --file coverage/lcov.info --diable search
