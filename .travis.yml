@@ -7,9 +7,10 @@ python:
 install:
         - pip install -r requirements.txt
 script:
+        - coverage erase
         - coverage run test_add.py
 before_install:
-        - pip install --user codecov
+        - pip install codecov
 after_sucess:
         - codecov -t $CODECOV_TOKEN
         - echo $CODECOV_TOKEN
