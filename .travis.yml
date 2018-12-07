@@ -7,6 +7,6 @@ python:
 install:
         - pip install -r requirements.txt
 script:
-        - nosetests -v --with-coverage
+        - coverage
 after_sucess:
-        - codecov -t $CODECOV_TOKEN
+        - codecov 
