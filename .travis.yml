@@ -9,4 +9,4 @@ script:
 before_install:
         - pip install codecov
 after_sucess:
-        - codecov -t $CODECOV_TOKEN
+        - bash <(curl -s https://codecov.io/bash)
