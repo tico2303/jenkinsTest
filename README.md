@@ -1,5 +1,5 @@
 # jenkinsTest
-testing jenkins CI workflow
+testing jenkins CI and Travis CI workflow
 
 
 [![Build Status](https://travis-ci.org/tico2303/jenkinsTest.svg?branch=master)](https://travis-ci.org/tico2303/jenkinsTest)
