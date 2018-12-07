@@ -11,4 +11,5 @@ script:
 before_install:
         - pip install codecov
 after_sucess:
-        - bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
+        - codecov -t $CODECOV_TOKEN
+        - echo $CODECOV_TOKEN
