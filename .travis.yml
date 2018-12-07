@@ -1,12 +1,12 @@
 language: python
 sudo: required 
 python:
-        - "2.7"
-        - "3.5"
         - "3.6"
 install:
         - pip install -r requirements.txt
 script:
-        - coverage
+        - nosetests
+before_install:
+        - pip install codecov
 after_sucess:
         - codecov 
